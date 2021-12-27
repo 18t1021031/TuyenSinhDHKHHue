@@ -1,0 +1,192 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - xin chao
+    - chao
+    - chào ad
+    - chào bot
+    - hello
+    - hi
+    - alo
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - bye bye
+    - cám ơn
+    - cám ơn nhiều
+    - pp
+    - bai bai
+    - bai
+
+- intent: infomation
+  examples: |
+    - thông tin trường đại học khoa học
+    - thông tin về trường
+    - trường có những đặc điểm gì
+    - lịch sử của trường
+    - trường đại học khoa học là gì
+    - school infomation
+    - info
+- intent: majors
+  examples: |
+    - trường đào tạo những ngành gì
+    - thông tin ngành
+    - ngành
+    - những ngành trường đào tạo
+    - trường dạy những ngành gì
+    - majors
+    - major
+- intent: tuition
+  examples: |
+    - học phí của trường là bao nhiêu
+    - học phí tại trường như thế nào
+    - mức học phí
+    - học phí
+    - học phí của ngành tự nhiên
+    - học phí ngành xã hội
+    - học phí hiện tại
+    - học phí năm nay như thế nào
+    - fee
+    - tuition fee
+- intent: reg
+  examples: |
+    - thông tin đăng ký xét tuyển
+    - cách đăng ký xét tuyển
+    - cho em hỏi cách đăng ký xét tuyển
+    - đăng ký xét tuyển như thế nào
+    - làm sao để đăng ký xét tuyển
+    - làm hồ sơ xét tuyển
+    - nộp hồ sơ xét tuyển
+    - cách gửi hồ sơ xét tuyển
+    - reg
+- intent: reg_pri
+  examples: |
+    - phương thức riêng
+    - tuyển thẳng
+- intent: reg_sp
+  examples: |
+    - phương thức học bạ
+    - học bạ
+    - hb
+    - xét tuyển học bạ
+    - xét học bạ
+- intent: reg_nhses
+  examples: |
+    - phương thức điểm thi tốt nghiệp trung học phổ thông
+    - phương thức điểm thi tốt nghiệp
+    - điểm thi
+    - tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp trung học phổ thông
+- intent: reg_condition
+  examples: |
+    - điều kiện
+    - điều kiện ạ
+    - điều kiện xét tuyển
+- intent: reg_method
+  examples: |
+    - phương thức xét tuyển
+    - cách đăng ký xét tuyển
+    - cách xét tuyển
+    - cách đăng ký
+- intent: benchmark
+  examples: |
+    - Điểm
+    - Điểm chuẩn năm nay
+    - Bảng điểm chuẩn
+- intent: job
+  examples: |
+    - Công việc sau khi ra trường
+    - Công việc
+    - [Việc làm]{"entity":"job"} sau khi ra trường
+    - Cơ hội việc làm
+    - [Việc làm]{"entity":"job"}
+    - Job
+
+- intent: job_IT
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [công nghệ thông tin]{"entity":"major", "value":"Công nghệ thông tin"}
+    - [Việc làm]{"entity":"job"} ngành [IT]{"entity":"major", "value":"Công nghệ thông tin"}
+    - Ngành [công nghệ thông tin]{"entity":"major", "value":"Công nghệ thông tin"} ra trường làm gì?
+    - Job of [IT]{"entity":"major", "value":"Công nghệ thông tin"}
+
+- intent: job_jour
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [báo chí]{"entity":"major", "value":"Báo chí"}
+    - Công việc cho ngành [báo chí]{"entity":"major", "value":"Báo chí"}
+    - Học [báo chí]{"entity":"major", "value":"Báo chí"} ra làm gì?
+    - Ngành [báo chí]{"entity":"major", "value":"Báo chí"} ra trường làm gì?
+    - Job of [journalism]{"entity":"major", "value":"Báo chí"}
+- intent: job_OS
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [đông phương học]{"entity":"major", "value":"Đông phương học"}
+    - Công việc cho ngành [đông phương học]{"entity":"major", "value":"Đông phương học"}
+    - Học ngành [đông phương học]{"entity":"major", "value":"Đông phương học"} ra làm gì?
+    - Ngành [đông phương học]{"entity":"major", "value":"Đông phương học"} ra trường làm gì?
+    - Job of [Oriental Studies]{"entity":"major", "value":"Đông phương học"}
+
+- intent: job_SE
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [kỹ thuật phần mềm]{"entity":"major", "value":"Kỹ thuật phần mềm"}
+    - Công việc cho ngành [kỹ thuật phần mềm]{"entity":"major", "value":"Kỹ thuật phần mềm"}
+    - Học ngành [kỹ thuật phần mềm]{"entity":"major", "value":"Kỹ thuật phần mềm"} học ra làm gì?
+    - Ngành [kỹ thuật phần mềm]{"entity":"major", "value":"Kỹ thuật phần mềm"} học ra trường làm gì?
+    - Job of [Software technology]{"entity":"major", "value":"Kỹ thuật phần mềm"}
+    
+- intent: job_Biotech
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [công nghệ sinh học]{"entity":"major", "value":"Công nghệ sinh học"}
+    - Công việc cho ngành [công nghệ sinh học]{"entity":"major", "value":"Công nghệ sinh học"}
+    - Học ngành [công nghệ sinh học]{"entity":"major", "value":"Công nghệ sinh học"} ra làm gì?
+    - Ngành [công nghệ sinh học]{"entity":"major", "value":"Công nghệ sinh học"} học ra trường làm gì?
+    - Job of [Biotechnology]{"entity":"major", "value":"Công nghệ sinh học"}
+
+- intent: job_Bioeng
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [kỹ thuật sinh học]{"entity":"major", "value":"Kỹ thuật sinh học"}
+    - Công việc cho ngành [kỹ thuật sinh học]{"entity":"major", "value":"Kỹ thuật sinh học"}
+    - Học ngành [kỹ thuật sinh học]{"entity":"major", "value":"Kỹ thuật sinh học"} ra làm gì?
+    - Ngành công nghệ [kỹ thuật sinh học]{"entity":"major", "value":"Kỹ thuật sinh học"} ra trường làm gì?
+    - Job of [Bioengineering]{"entity":"major", "value":"Kỹ thuật sinh học"}
+    
+- intent: job_Arc
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [kiến trúc]{"entity":"major", "value":"Kiến trúc"}
+    - Công việc cho ngành [kiến trúc]{"entity":"major", "value":"Kiến trúc"}
+    - Học ngành [kiến trúc]{"entity":"major", "value":"Kiến trúc"} ra làm gì?
+    - Ngành công nghệ [kiến trúc]{"entity":"major", "value":"Kiến trúc"} ra trường làm gì?
+    - Job of [architecture]{"entity":"major", "value":"Kiến trúc"}
+
+- intent: job_Chemi
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [hoá học]{"entity":"major", "value":"Hoá học"}
+    - Công việc cho ngành [hoá học]{"entity":"major", "value":"Hoá học"}
+    - Học ngành [hoá học]{"entity":"major", "value":"Hoá học"} ra làm gì?
+    - Ngành công nghệ [hoá học]{"entity":"major", "value":"Hoá học"} ra trường làm gì?
+    - Job of [Chemistry]{"entity":"major", "value":"Hoá học"}
+
+- intent: job_Philo
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [triết học]{"entity":"major", "value":"Triết học"}
+    - Công việc cho ngành [triết học]{"entity":"major", "value":"Triết học"}
+    - Học ngành [triết học]{"entity":"major", "value":"Triết học"} ra làm gì?
+    - Ngành công nghệ [triết học]{"entity":"major", "value":"Triết học"} ra trường làm gì?
+    - Job of [Philosophy]{"entity":"major", "value":"Triết học"}
+
+- intent: job_SW
+  examples: |
+    - [Việc làm]{"entity":"job"} ngành [công tác xã hội]{"entity":"major", "value":"Công tác xã hội"}
+    - Công việc cho ngành [công tác xã hội]{"entity":"major", "value":"Công tác xã hội"}
+    - Học ngành [công tác xã hội]{"entity":"major", "value":"Công tác xã hội"} ra làm gì?
+    - Ngành công nghệ [công tác xã hội]{"entity":"major", "value":"Công tác xã hội"} ra trường làm gì?
+    - Job of [Social work sector]{"entity":"major", "value":"Công tác xã hội"}
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+

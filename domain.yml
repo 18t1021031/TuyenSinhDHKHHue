@@ -1,0 +1,271 @@
+version: "3.0"
+
+intents:
+ - greet
+ - goodbye
+ - infomation
+ - majors
+ - tuition
+ - reg
+ - reg_pri
+ - reg_sp
+ - reg_nhses
+ - reg_condition
+ - reg_method
+ - benchmark
+ - job
+ - job_IT
+ - job_jour
+ - job_OS
+ - job_SE
+ - job_Biotech
+ - job_Bioeng
+ - job_Arc
+ - job_Chemi
+ - job_Philo
+ - job_SW
+ - bot_challenge
+
+entities:
+ - job
+ - major
+
+responses:
+  utter_greet:
+  - text: "Chào bạn. Mình là Chatbot hỗ trợ tư vấn tuyển sinh Trường Đại học Khoa học - Đại học Huế. Bạn cần tư vấn về vấn đề gì?"
+
+
+  utter_goodbye:
+  - text: "Cám ơn bạn đã đến đây."
+  
+  
+  utter_info:
+  - text: "Trường Đại học Khoa học , Đại học Huế (ĐHKH) là một đơn vị đào tạo và nghiên cứu có uy tín và bề dày thành tích ở khu vực miền Trung và Tây Nguyên. Với lịch sử hơn 63 năm xây dựng và phát triển (1957 – 2020), Trường ĐHKH hiện nay đã xây dựng được một mô hình giáo dục hiện đại, đa dạng ngành nghề, nhiều tiềm năng hợp tác quốc tế và liên kết với các doanh nghiệp. Nhà trường có 15 khoa, 05 trung tâm nghiên cứu, 01 viện nghiên cứu. Đội ngũ giảng viên, cán bộ của Trường hiện nay có 03 giáo sư, 44 phó giáo sư, 67 tiến sĩ và 197 nghiên cứu sinh, thạc sĩ; đã đạt nhiều thành tích trong giảng dạy, nghiên cứu khoa học và ứng dụng, chuyển giao công nghệ với hơn 1.535 đề tài khoa học cùng nhiều bài báo quốc tế có uy tín. Trong đó, có 22 đề tài hợp tác quốc tế, 4 đề tài cấp Nhà nước, 159 đề tài nghiên cứu cơ bản, 312 đề tài cấp Bộ và cấp Bộ trọng điểm, 108 đề tài cấp Tỉnh và các đề tài cơ sở.
+     Cơ sở vật chất của Nhà trường đang không ngừng hiện đại hóa nhằm bắt kịp với xu thế giáo dục trong nền văn minh công nghiệp 4.0. Trường ĐHKH hiện có 09 tòa nhà đã và đang được xây dựng, với 92 phòng học đạt tiêu chuẩn. Trong đó, có 12 phòng học được trang bị hệ thống nghe nhìn hiện đại; 47 phòng thí nghiệm cơ bản, phòng thí nghiệm chuyên đề, phòng tư liệu và phòng bảo tàng; 08 phòng thực hành máy tính và 01 thư viện trung tâm. Các phòng thí nghiệm được xây dựng hiện đại, thư viện có nguồn tài liệu bao gồm sách, báo, tạp chí… đáp ứng tốt cho công tác đào tạo và nghiên cứu khoa học của cán bộ, sinh viên, học viên của Trường. Ngoài ra, Nhà trường còn có hệ thống căng tin, nhà ở dành cho chuyên gia, giảng viên thỉnh giảng, học viên khang trang, hiện đại phục vụ dạy học.
+     Hiện nay, trong bối cảnh toàn cầu hóa tri thức, nền công nghiệp 4.0 đang diễn ra mạnh mẽ, mọi lĩnh vực đều hướng đến hội nhập quốc tế sâu rộng, Trường ĐHKH đã nhanh chóng đổi mới chương trình dạy và học theo hướng tự chủ, phát huy tối đa tính nhân văn, sáng tạo, khai phóng. Vấn đề cấp bách hiện nay đặt ra được Lãnh đạo Nhà trường cùng toàn thể giảng viên, cán bộ hết sức quan tâm, đó là vấn đề chất lượng đầu ra và cơ hội việc làm cho người học nói chung (sinh viên, học viên cao học, nghiên cứu sinh).
+     - Địa chỉ        77 Nguyễn Huệ, TP. Huế\n
+     - Số điện thoại (0234) 3823290\n
+     - Email          khcndhkh@hueuni.edu.vn\n
+     - Facebook       facebook.com/husc.edu.vn\n
+     "
+    
+  utter_majors:
+  - text: " Các khoa ngành trường đang đào tạo:\n
+     - Báo chí\n
+     - Công nghệ kỹ thuật điện tử - Viễn thông\n
+     - Công nghệ kỹ thuật hóa học\n
+     - Công nghệ sinh học\n
+     - Công nghệ thông tin\n
+     - Công tác xã hội\n
+     - Đông phương học\n
+     - Hán - Nôm\n
+     - Hoá học\n
+     - Khoa học môi trường\n
+     - Kiến trúc\n
+     - Kỹ thuật địa chất\n
+     - Kỹ thuật môi trường\n
+     - Kỹ thuật phần mềm (Cơ chế đặc thù)\n
+     - Kỹ thuật sinh học\n
+     - Lịch sử\n
+     - Quản lý nhà nước\n
+     - Quản lý tài nguyên và môi trường\n
+     - Quản trị và phân tích dữ liệu\n
+     - Toán ứng dụng\n
+     - Triết học\n
+     - Văn học\n
+     - Xã hội học"
+        
+    
+  utter_tuition:
+  - text: "
+     Khoa học Xã hội: 320.000đ/tín chỉ. Tổng 9.600.000đ/năm\n
+     Khoa học tự nhiên và Công nghệ:385.000đ/tín chỉ. Tổng khoảng  11.550.000đ/năm\n
+     "
+
+  utter_reg:
+  - text: "Bạn muốn hỏi về việc đăng ký xét tuyển theo phương thức nào? Phương thức riêng, phương thức học bạ hay phương thức xét điểm tốt nghiệp?\n"
+    
+  utter_reg_pri_con:
+  - text: "Xét tuyển thẳng đối với thí sinh thỏa mãn một trong các tiêu chí sau đây:\n
+     - Thí sinh đạt giải nhất, nhì, ba trong các cuộc thi học sinh giỏi cấp tỉnh, thành phố trực thuộc trung ương trở lên các năm 2020, 2021 (môn đoạt giải phải thuộc tổ hợp môn xét tuyển);\n
+     - Thí sinh của các trường THPT chuyên trên cả nước có điểm học bạ theo tổ hợp xét tuyển đạt từ 21.0 điểm trở lên.\n
+     - Thí sinh của các trường THPT có học lực năm học lớp 12 đạt danh hiệu học sinh giỏi trở lên;\n
+     - Thí sinh có chứng chỉ Tiếng Anh (còn thời hạn đến ngày nộp hồ sơ đăng ký xét tuyển) IELTS >= 5.0 hoặc TOEFL iBT >= 60 hoặc TOEFL ITP >= 500 đối với những ngành mà tổ hợp môn xét tuyển có môn Tiếng Anh.\n
+       "
+  utter_reg_pri_me:
+  - text: " 
+     - Hồ sơ ĐKXT: Phiếu ĐKXT theo mẫu của Đại học Huế (thí sinh có thể tải mẫu tại đây theo file word http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/03/PhieuDangKyXetTuyen-PhuongThucRieng.docx hoặc file pdf http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/03/PhieuDangKyXetTuyen-PhuongThucRieng.pdf); bản sao Giấy chứng nhận đạt giải, học bạ, chứng chỉ theo quy định của từng trường.\n
+     - Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.\n
+     - Thời gian nộp hồ sơ ĐKXT: Từ ngày 01/4/2021 đến 17h00 ngày 31/5/2021.\n
+     - Địa chỉ nộp hồ sơ ĐKXT: Thí sinh Nộp hồ sơ ĐKXT trực tiếp tại Ban Đào tạo và Công tác sinh viên Đại học Huế, số 01 Điện Biên Phủ, thành phố Huế, tỉnh Thừa Thiên Huế hoặc chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ trên (thời gian nộp qua EMS được tính theo dấu bưu điện) hoặc nộp trực tiếp tại các đơn vị đào tạo.\n
+     "
+  utter_reg_nhses_con:
+  - text: "\nĐiểm các môn trong tổ hợp môn xét tuyển là điểm thi của các môn đó trong kỳ thi tốt nghiệp THPT năm 2021. Điều kiện xét tuyển là tổng điểm 3 môn (chưa nhân hệ số, đã cộng điểm ưu tiên) tối thiểu bằng mức điểm nhận hồ sơ ĐKXT. \n
+     - Điểm chuẩn các ngành:  http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/09/1.jpg\n
+     - Phiếu đăng ký: http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/09/Phieu_DKXT_BSD1_THPT-web.jpg\n
+        "
+  utter_reg_nhses_me:
+  - text: "
+      Với trực tiếp:
+        Hồ sơ đăng ký xét tuyển gồm có:
+        -	Phiếu ĐKXT theo mẫu đính kèm; \n
+        -	Bản chính Giấy chứng nhận kết quả thi tốt nghiệp THPT năm 2021;\n
+        -	Bản chính Giấy chứng nhận kết quả thi năng khiếu (đối với thí sinh ĐKXT vào các ngành năng khiếu);\n
+        -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.\n
+      Với trực tuyến:
+        - Thí sinh ĐKXT xét tuyển trực tuyến tại địa chỉ: http://dkxt.hueuni.edu.vn. Thí sinh trúng tuyển sẽ nộp bản chính các hồ sơ liên quan (ở mục 1) khi làm thủ tục nhập học tại trường\n
+        - Thời gian: Từ ngày 23/9/2021 đến 17g00 ngày 05/10/2021\n
+        - Địa điểm (đối với hình thức ĐKXT trực tiếp):\n
+        Thí sinh nộp hồ sơ ĐKXT bằng cách gửi chuyển phát nhanh (EMS) qua đường bưu điện về Ban Đào tạo và Công tác sinh viên Đại học Huế, số 01 đường Điện Biên Phủ, phường Vĩnh Ninh, thành phố Huế, tỉnh Thừa Thiên Huế.\n
+        - Công bố kết quả: Dự kiến trước 17h00 ngày 07 tháng 10 năm 2021.\n
+        "
+  utter_reg_sp_con:
+  - text: "Sử dụng kết quả học tập các môn trong tổ hợp môn xét tuyển ở cấp THPT của học kỳ I năm học lớp 11, học kỳ II năm học lớp 11 và học kỳ I năm học lớp 12 (03 học kỳ) để xét tuyển. Điểm các môn trong tổ hợp môn xét tuyển là điểm trung bình chung (làm tròn đến 1 chữ số thập phân) mỗi môn học của học kỳ I năm học lớp 11, học kỳ II năm học lớp 11  và học kỳ I năm học lớp 12, điểm xét tuyển là tổng điểm các môn trong tổ hợp môn xét tuyển cộng với điểm ưu tiên theo khu vực và đối tượng nếu có (làm tròn đến 2 chữ số thập phân). Điều kiện xét tuyển là tổng điểm các môn trong tổ hợp môn xét tuyển phải >=18,0 (chưa nhân hệ số).\n"
+  utter_reg_sp_me:
+  - text: "
+        Với trực tuyến:
+        - Thí sinh có thể truy cập địa chỉ http://dkxt.hueuni.edu.vn và làm theo hướng dẫn ở trang chủ để thực hiện ĐKXT trực tuyến.\n
+        -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.\n
+        -	Thời gian ĐKXT trực tuyến: Từ ngày 01/4/2021 đến 17h00 ngày 31/5/2021\n
+        Với trực tiếp:
+        -	Hồ sơ ĐKXT (nếu không sử dụng hình thức ĐKXT trực tuyến): Phiếu ĐKXT theo mẫu của Đại học Huế (thí sinh có thể tải mẫu tại đây theo file word http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/03/PhieuDangKyXetTuyen-HocBa.docx hoặc file pdf http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/03/PhieuDangKyXetTuyen-HocBa.docx).\n
+        -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.\n
+        -	Thời gian nộp hồ sơ ĐKXT: Từ ngày 01/4/2021 đến 17h00 ngày 31/5/2021.\n
+        -	Địa chỉ nộp hồ sơ ĐKXT: Thí sinh Nộp hồ sơ ĐKXT trực tiếp tại Ban Đào tạo và Công tác sinh viên Đại học Huế, số 01 Điện Biên Phủ, thành phố Huế, tỉnh Thừa Thiên Huế hoặc chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ trên (thời gian nộp qua EMS được tính theo dấu bưu điện).\n
+        "
+  utter_reg_ask:
+  - text: " Bạn hỏi về điều kiện xét tuyển hay phương thức xét tuyển?\n"
+
+  utter_benchmark:
+  - text: " http://tuyensinh.husc.edu.vn/wp-content/uploads/2021/09/1.jpg"
+    
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa.\n"
+
+  utter_please_rephrase:
+    - text: "Xin lỗi, tôi không hiểu, bạn nói rõ hơn được không?\n"
+
+  utter_job:
+    - text: "Bạn muốn hỏi công việc cho ngành đào tạo nào?"
+
+  utter_job_IT:
+    - text: "\n
+        - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+        - Chuyên viên gia công, phát triển và kiểm thử phần mềm, thiết kế Website tại các công ty phần mềm trong và ngoài nước;\n
+        - Chuyên viên tư vấn và thiết kế giải pháp mạng, giải pháp công nghệ thông tin, vận hành và phát triển các hệ thống thông tin cho các cơ quan và doanh nghiệp;\n
+        - Chuyên viên phân tích, thiết kế, cài đặt, quản trị, bảo trì các phần mềm máy tính trong các tổ chức, doanh nghiệp;\n
+        - Giảng dạy về ngành Công nghệ thông tin tại các trường đại học, cao đẳng, trung cấp  chuyên nghiệp, dạy nghề và các trường phổ thông.\n
+        "
+  utter_job_jour:
+    - text: "\n
+        -	Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+        -	Phóng viên, biên tập viên, kỹ thuật viên tại: đài phát thanh, đài truyền hình, toà soạn báo, các cơ quan thông tấn báo chí ở Trung ương và địa phương;\n
+        -	Cán bộ quản lý hoạt động báo chí, truyền thông tại các tỉnh, thành phố;\n
+        -	Chuyên viên truyền thông, quan hệ công chúng tại các công ty, doanh nghiệp, cơ quan hành chính sự nghiệp;\n
+        -	Chuyên viên phụ trách các trang thông tin điện tử của các cơ quan ban ngành ở Trung ương và địa phương;\n
+        -	Giảng dạy tại các trường đào tạo báo chí, truyền thông.\n
+        "
+  utter_job_OS:
+    - text: "\n
+        -	Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+        -	Làm việc tại các cơ quan ban ngành Nhà nước từ Trung ương đến địa phương về lịch sử, văn hóa, xã hội, ngoại giao, an ninh – quốc phòng; các cơ sở ngoại giao, học viện, trường chính trị, cơ quan tuyên giáo, công ty nước ngoài, công ty du lịch, chương trình, dự án, tổ chức phi chính phủ;\n
+        -	Chuyên viên tổng hợp văn phòng, nhân sự, kinh doanh, hướng dẫn viên du lịch… cho các tổ chức tư nhân, công ty, doanh nghiệp trong các lĩnh vực du lịch, lữ hành, văn hóa, xã hội, đối ngoại;\n
+        -	Làm việc tại các nước trong khu vực châu Á (Nhật Bản, Hàn Quốc, Trung Quốc, Thái Lan, Malaysia, Singapore…) theo các chương trình, dự án hợp tác của Chính phủ hoặc các công ty, cơ quan nghiên cứu, ngoại giao, du lịch… ở nước ngoài.\n
+        "
+  utter_job_SE:
+  - text: "\n
+       - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:
+       - Làm việc trong các công ty sản xuất, gia công phần mềm trong nước cũng như nước ngoài; các công ty tư vấn về đề xuất giải pháp, xây dựng và bảo trì các hệ thống thông tin;\n
+       - Chuyên viên phân tích, thiết kế, cài đặt, quản trị, bảo trì các phần mềm máy tính trong các tổ chức, doanh nghiệp;\n
+       - Cán bộ quản lý, chuyên viên phụ trách mảng ứng dụng công nghệ thông tin của các cơ quan hành chính sự nghiệp, ngân hàng, viễn thông, hàng không, xây dựng,…;\n
+       - Giảng dạy về ngành Công nghệ thông tin tại các trường đại học, cao đẳng và  trung cấp chuyên nghiệp.\n"
+
+  utter_job_Biotech:
+  - text: "\n
+      - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Cán bộ kỹ thuật, cán bộ kiểm nghiệm ở Bệnh viện, Sở Công an, Sở Y tế, Xí nghiệp dược phẩm, Trung tâm phân tích, cơ sở nuôi trồng thủy sản, khu chế xuất, các cơ sở sản xuất nuôi cấy mô, cơ sở chế biến thực phẩm;\n
+      - Cán bộ kỹ thuật tại cácTrung tâm chuyển giao công nghệ và phát triển sản xuất: nuôi cấy mô, giống cây trồng và vật nuôi, nuôi trồng và chế biến các loại nấm, chế biến thực phẩm, công nghệ bảo quản sản phẩm sau thu hoạch, dược phẩm (sản xuất, chế biến thuốc, vacxin), xử lý môi trường;\n
+      - Giảng dạy và nghiên cứu tại các viện nghiên cứu, trường đại học, cao đẳng và trung cấp chuyên nghiệp.\n
+      "
+  utter_job_Bioeng:
+  - text: "\n
+      - Kỹ sư Kỹ thuật sinh học có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Chuyên viên tại các cơ quan quản lý Nhà nước, quản lý chất lượng trong lĩnh vực sinh học, công nghệ sinh học, thực phẩm;\n
+      - Cán bộ quản lý, kỹ thuật, kiểm tra chất lượng sản phẩm tại các doanh nghiệp sản xuất và các tập đoàn đa quốc gia về lĩnh vực nước giải khát, vacxin, dược phẩm, thực phẩm chức năng, các sản phẩm có hoạt tính sinh học;\n
+      - Cán bộ kỹ thuật, quản lý chất lượng tại các đơn vị tư vấn, thiết kế, lắp đặt và vận hành các thiết bị trong lĩnh vực công nghệ sinh học;\n
+      - Chuyên viên lập và quản lý các dự án đầu tư phát triển nông thôn;\n
+      - Giảng dạy, nghiên cứu tại các viện nghiên cứu, trường đại học, cao đẳng và trung cấp chuyên nghiệp.\n
+      "
+  utter_job_Arc:
+  - text: "\n
+      - Sinh viên tốt nghiệp ngành Kiến trúc được cấp bằng Kiến trúc sư, có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Tự khởi nghiệp với vai trò chủ đầu tư, nhà thiết kế, thi công kiến trúc – quy hoạch – nội thất – vật liệu;\n
+      - Cán bộ trong các tổ chức chính trị – xã hội – nghề nghiệp, các doanh nghiệp Nhà nước, tư nhân và nước ngoài (đặc biệt tại Nhật Bản và Hàn Quốc);\n
+      - Kiến trúc sư tư vấn, thiết kế công trình kiến trúc dân dụng và công nghiệp, thiết kế nội thất, thiết kế quy hoạch, thiết kế bảo tồn và cảnh quan, giám sát thi công các công trình kiến trúc;\n
+      - Chuyên viên tư vấn, điều phối, xây dựng, thẩm định và đánh giá dự án;\n
+      - Giảng dạy và nghiên cứu tại các cơ sở giáo dục đào tạo và các Viện, trung tâm nghiên cứu, các trường đại học liên quan đến chuyên ngành Kiến trúc – Quy hoạch – Nội thất – xây dựng.\n
+      "
+
+  utter_job_Chemi:
+  - text: "\n
+      - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Chuyên viên nghiên cứu, tư vấn tại các viện, trung tâm nghiên cứu, các cơ quan quản lý liên quan đến hóa học, hóa học môi trường…;\n
+      - Chuyên viên quản lý, kỹ thuật, kiểm tra chất lượng sản phẩm tại các công ty, nhà máy sản xuất liên quan đến lĩnh vực hóa học (sản xuất vật liệu xây dựng, chế biến thực phẩm, mỹ phẩm, dược phẩm, bảo vệ và kiểm soát chất lượng môi trường…);\n
+      - Giảng viên các trường đại học, cao đẳng, trung học phổ thông và trung học chuyên nghiệp.\n
+
+      "
+  utter_job_Philo:
+  - text: "\n
+      - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Chuyên viên tại các cơ quan Nhà nước, trong hệ thống chính trị, chính quyền các cấp, các tổ chức Đảng, Đoàn thể như: Văn phòng Chính phủ, Mặt trận Tổ quốc, Công đoàn, Đoàn Thanh niên, Hội Liên hiệp Phụ nữ, Hội Nông dân…;\n
+      - Làm công tác tham mưu trong các cơ quan, tổ chức chính trị – xã hội, các tổ chức kinh tế Nhà nước và tư nhân;\n
+      - Nghiên cứu viên ở các cơ quan lý luận chính trị, các Viện nghiên cứu thuộc lĩnh vực xã hội;\n
+      - Chuyên viên phân tích, bình luận, viết bài về chính trị, thời sự ở các báo, đài Trung ương và địa phương;\n
+      - Giảng dạy tại các trường đại học, cao đẳng và trung cấp chuyên nghiệp.\n
+
+      "
+  utter_job_SW:
+  - text: "\n
+      - Sinh viên tốt nghiệp có thể làm việc trong các lĩnh vực và vị trí sau:\n
+      - Chuyên viên tại các cơ quan Nhà nước, các trung tâm và tổ chức tư nhân trong các lĩnh vực về lao động, việc làm, tiền lương, tổ chức nhân sự, thương binh – xã hội, bà mẹ – trẻ em, hoạt động xã hội – phong trào, tổ chức sự kiện xã hội;\n
+      - Chuyên viên các chương trình dự án, tổ chức phi chính phủ (NGO) quốc tế và địa phương, tham gia nghiên cứu và phát triển chính sách hỗ trợ xã hội ở các cấp;\n
+      - Làm việc độc lập với vai trò như là một cán bộ hoạch định chính sách, nhân viên xã hội, một kiểm huấn viên, một chuyên gia tâm lý, hay một nhà nghiên cứu…;\n
+      - Giảng dạy và nghiên cứu khoa học trong các viện nghiên cứu, các trường đại học, cao đẳng và trung cấp chuyên nghiệp.\n
+
+      "
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+ 
+action:
+ - utter_goodbye
+ - utter_greet
+ - utter_info
+ - utter_majors
+ - utter_reg
+ - utter_reg_nhses_con
+ - utter_reg_nhses_me
+ - utter_reg_pri_con
+ - utter_reg_pri_me
+ - utter_reg_sp_con
+
+ - utter_reg_sp_me
+ - utter_tuition
+ - utter_benchmark
+ - utter_job
+ - utter_job_IT
+ - utter_job_OS
+ - utter_job_jour
+ - utter_please_rephrase
+ - utter_iamabot
+ - utter_job_SE
+
+ - utter_job_Biotech
+ - utter_job_Bioeng
+ - utter_job_Arc
+ - utter_job_Chemi
+ - utter_job_Philo
+ - utter_job_SW
+ - utter_bot_challenge
+ - utter_out_of_scope

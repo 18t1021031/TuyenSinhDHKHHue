@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-job",
+      "2": "I-job",
+      "3": "L-job",
+      "4": "U-job",
+      "5": "B-major",
+      "6": "I-major",
+      "7": "L-major",
+      "8": "U-major",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-job": 1,
+      "I-job": 2,
+      "L-job": 3,
+      "U-job": 4,
+      "B-major": 5,
+      "I-major": 6,
+      "L-major": 7,
+      "U-major": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

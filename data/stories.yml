@@ -1,0 +1,321 @@
+version: "3.0"
+
+stories:
+
+#- story: tổng hợp 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: infomation
+#  - action: utter_info
+#  - intent: majors
+#  - action: utter_majors
+#  - intent: tuition
+#  - action: utter_tuition
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_nhses
+#  - action: utter_reg_ask
+#  - intent: reg_condition
+#  - action: utter_reg_nhses_con
+#  - intent: benchmark
+#  - action: utter_benchmark
+#  - intent: job_IT
+#  - action: utter_job_IT
+#  - intent: job_jour
+#  - action: utter_job_jour
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi thông tin trường
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: infomation
+#  - action: utter_info
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi ngành đào tạo
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: majors
+#  - action: utter_majors
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi học phí
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: tuition
+#  - action: utter_tuition
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi điều kiện xét tuyển bằng điểm tốt nghiệp
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_nhses
+#  - action: utter_reg_ask
+#  - intent: reg_condition
+#  - action: utter_reg_nhses_con
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi phương thức xét tuyển bằng điểm tốt nghiệp
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_nhses
+#  - action: utter_reg_ask
+#  - intent: reg_method
+#  - action: utter_reg_nhses_me
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi điều kiện xét tuyển bằng học bạ
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_sp
+#  - action: utter_reg_ask
+#  - intent: reg_condition
+#  - action: utter_reg_sp_con
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi phương thức xét tuyển bằng học bạ
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_sp
+#  - action: utter_reg_ask
+#  - intent: reg_method
+#  - action: utter_reg_sp_me
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi điều kiện xét tuyển theo phương thức riêng
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_pri
+#  - action: utter_reg_ask
+#  - intent: reg_condition
+#  - action: utter_reg_pri_con
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi phương thức xét tuyển theo phương thức riêng
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: reg
+#  - action: utter_reg
+#  - intent: reg_pri
+#  - action: utter_reg_ask
+#  - intent: reg_method
+#  - action: utter_reg_pri_me
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi điểm chuẩn
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: benchmark
+#  - action: utter_benchmark
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi việc làm ngành IT
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: job
+#  - action: utter_job
+#  - intent: job_IT
+#  - action: utter_job_IT
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi việc làm ngành OS
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: job
+#  - action: utter_job
+#  - intent: job_OS
+#  - action: utter_job_OS
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi việc làm ngành ST
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: job
+#  - action: utter_job
+#  - intent: job_ST
+#  - action: utter_job_ST
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi việc làm ngành Bio
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: job
+#  - action: utter_job
+#  - intent: job_Bio
+#  - action: utter_job_Bio
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: hỏi việc làm ngành Báo chí
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: job
+#  - action: utter_job
+#  - intent: job_jour
+#  - action: utter_job_jour
+#  - intent: goodbye
+#  - action: utter_goodbye
+
+
+- story: hỏi thông tin trường
+  steps:
+  - intent: infomation
+  - action: utter_info
+
+- story: hỏi ngành đào tạo
+  steps:
+  - intent: majors
+  - action: utter_majors
+
+- story: hỏi học phí
+  steps:
+  - intent: tuition
+  - action: utter_tuition
+
+- story: hỏi xét tuyển
+  steps:
+  - intent: reg
+  - action: utter_reg
+
+- story: hỏi điều kiện xét tuyển bằng điểm tốt nghiệp
+  steps:
+  - intent: reg_nhses
+  - action: utter_reg_ask
+  - intent: reg_condition
+  - action: utter_reg_nhses_con
+
+- story: hỏi phương thức xét tuyển bằng điểm tốt nghiệp
+  steps:
+  - intent: reg_nhses
+  - action: utter_reg_ask
+  - intent: reg_method
+  - action: utter_reg_nhses_me
+
+- story: hỏi điều kiện bằng học bạ
+  steps:
+  - intent: reg_sp
+  - action: utter_reg_ask
+  - intent: reg_condition
+  - action: utter_reg_sp_con
+
+- story: hỏi phương thức xét tuyển bằng học bạ
+  steps:
+  - intent: reg_sp
+  - action: utter_reg_ask
+  - intent: reg_method
+  - action: utter_reg_sp_me
+
+
+- story: hỏi điều kiện xét tuyển theo phương thức riêng
+  steps:
+  - intent: reg_pri
+  - action: utter_reg_ask
+  - intent: reg_condition
+  - action: utter_reg_pri_con
+
+- story: hỏi phương thức xét tuyển theo phương thức riêng
+  steps:
+  - intent: reg_pri
+  - action: utter_reg_ask
+  - intent: reg_method
+  - action: utter_reg_pri_me
+
+- story: hỏi điểm chuẩn
+  steps:
+  - intent: benchmark
+  - action: utter_benchmark
+
+- story: hỏi việc làm ngành IT
+  steps:
+  - intent: job_IT
+  - action: utter_job_IT
+
+- story: hỏi việc làm ngành OS
+  steps:
+  - intent: job_OS
+  - action: utter_job_OS
+
+- story: hỏi việc làm ngành SE
+  steps:
+  - intent: job_SE
+  - action: utter_job_SE
+
+- story: hỏi việc làm ngành Biotech
+  steps:
+  - intent: job_Biotech
+  - action: utter_job_Biotech
+
+- story: hỏi việc làm ngành Bioeng
+  steps:
+  - intent: job_Bioeng
+  - action: utter_job_Bioeng
+
+- story: hỏi việc làm ngành Báo chí
+  steps:
+  - intent: job_jour
+  - action: utter_job_jour
+
+- story: hỏi việc làm ngành Arc
+  steps:
+  - intent: job_Arc
+  - action: utter_job_Arc
+
+- story: hỏi việc làm ngành Chemi
+  steps:
+  - intent: job_Chemi
+  - action: utter_job_Chemi
+
+- story: hỏi việc làm ngành Philo
+  steps:
+  - intent: job_Philo
+  - action: utter_job_Philo
+
+- story: hỏi việc làm ngành SW
+  steps:
+  - intent: job_SW
+  - action: utter_job_SW
+
+- story: hỏi việc làm
+  steps:
+  - intent: job
+  - action: utter_job
